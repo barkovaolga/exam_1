@@ -1,0 +1,31 @@
+@use "mixins" as m;
+%btn-shared {
+  position: relative;
+  display: inline-block;
+  padding: 20px 32px;
+  min-width: 213px;
+  background: #8f858f;
+  color: white;
+  @include m.text(16px, 400, 20px, 7%);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #486bfe;
+  letter-spacing: 2px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 200px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    transform: skewX(45deg);
+  }
+}
+%logo {
+  @include m.text-title(24px, 700, 28px, 10%);
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
