@@ -82,11 +82,10 @@ body {
 
 .hero {
   width: 100%;
-  min-height: 100vh;
+  height: 862px;
   padding-top: 295px;
   background: url("../assets/img/HeaderBackground.jpg") center/cover no-repeat;
   text-align: center;
-  background-position: center top;
   position: relative;
 }
 .hero_title {
